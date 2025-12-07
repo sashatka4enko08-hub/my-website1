@@ -1,0 +1,270 @@
+/* ========================================= */
+/* 1. ЗАГАЛЬНІ СТИЛІ */
+/* ========================================= */
+body {
+    font-family: 'Roboto', sans-serif; /* Основний шрифт для тексту */
+    color: #666; /* Сірий колір тексту */
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Білий фон */
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+    color: #556b2f; /* Основний зелений колір */
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* --- Стилі для посилань --- */
+a {
+    color: #556b2f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8fbc8f;
+}
+
+/* ========================================= */
+/* 2. СТИЛІ ГЛАВНОЇ СЕКЦІЇ (section-main) */
+/* ========================================= */
+.section-main {
+    background-color: #8fbc8f; /* Світло-зелений фон */
+    color: #fff; 
+    text-align: center;
+    padding: 50px 20px;
+    min-height: 80vh; /* Зменшуємо висоту, щоб інші секції були одразу видно */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-main-logo {
+    width: 120px; 
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.section-main-title {
+    font-size: 3.5em;
+    margin: 10px 0;
+    color: #fff; 
+}
+
+.section-main-subtitle {
+    font-size: 1.6em;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.section-main-button {
+    background-color: #556b2f; /* Основний зелений колір */
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 50px; /* Кругла кнопка */
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.section-main-button:hover {
+    background-color: #445524; 
+}
+
+/* ========================================= */
+/* 3. СТИЛІ СЕКЦІЇ ПРО БІБЛІОТЕКУ (second-section) */
+/* ========================================= */
+.second-section {
+    padding: 60px 20px;
+}
+
+.second-section h2 {
+    font-size: 2.5em;
+}
+
+.info-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start; /* Вирівнювання елементів вгорі */
+}
+
+.mission-block, .founder-block {
+    flex: 1; /* Рівна ширина для обох блоків */
+    padding: 0 15px;
+}
+
+.founder-block h3, .mission-block h3 {
+    text-align: left;
+    font-size: 1.8em;
+    border-bottom: 2px solid #8fbc8f;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* СТИЛІ ЗОБРАЖЕННЯ ЗАСНОВНИЦІ */
+.founder-photo {
+    /* Обмеження розміру зображення */
+    width: 100%; /* Займає всю доступну ширину свого блоку */
+    max-width: 300px; /* Обмежуємо максимальний розмір */
+    height: auto;
+    display: block; /* Важливо для центрування та уникнення зайвого простору */
+    margin: 20px auto 0 auto; /* Відступ зверху і центрування */
+    
+    /* Додавання оформлення */
+    border: 5px solid #556b2f; /* Рамка основного кольору */
+    border-radius: 10px; /* Закруглені кути */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Легка тінь */
+}
+
+
+/* ========================================= */
+/* 4. СТИЛІ СЕКЦІЇ РЕКОМЕНДАЦІЙ (third-section) */
+/* ========================================= */
+.third-section {
+    background-color: #f8f8f8; /* Дуже світлий фон */
+    padding: 60px 20px;
+}
+
+.book-table-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow-x: auto; /* Дозволяє прокрутку на малих екранах */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Прибираємо подвійні лінії */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+table thead {
+    background-color: #556b2f; /* Основний зелений для заголовка таблиці */
+    color: white;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #e0e0e0; /* Світлі лінії сітки */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f4f4f4; /* Смугаста таблиця для кращої читабельності */
+}
+
+table tbody tr:hover {
+    background-color: #e6f7e6; /* Легкий світло-зелений при наведенні */
+    cursor: default;
+}
+
+/* ========================================= */
+
+/* ========================================= */
+/* 5. СТИЛІ ФУТЕРА (footer) - ОНОВЛЕНІ З КОЛЬОРОМ EMAIL */
+/* ========================================= */
+.footer {
+    background-color: #666; /* Сірий колір */
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.subscription-form, .contact-info {
+    width: 45%; 
+}
+
+.footer h4 {
+    color: #8fbc8f; /* Світло-зелений колір */
+    text-align: left; 
+    border-bottom: 2px solid #8fbc8f;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.subscription-form form {
+    display: flex; 
+    gap: 10px;
+}
+
+.footer input[type="email"] {
+    flex-grow: 1; 
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer button {
+    background-color: #556b2f;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.footer button:hover {
+    background-color: #445524;
+}
+
+.footer .contact-info p {
+    margin: 5px 0;
+    text-align: left; 
+}
+
+/* ЗМІНА КОЛЬОРУ EMAIL: */
+.footer .contact-info a {
+    color: #8fbc8f; /* Світло-зелений колір для посилання на пошту */
+    text-decoration: underline;
+}
+
+.footer .contact-info a:hover {
+    color: #fff; /* Білий при наведенні курсору */
+}
+
+/* --- Адаптивність --- */
+@media (max-width: 768px) {
+    /* ... (решта медіа-запиту залишається без змін) ... */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscription-form, .contact-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .footer h4 {
+        text-align: center;
+    }
+    
+    .footer .contact-info p {
+        text-align: center;
+    }
+    
+    .subscription-form form {
+        flex-direction: column;
+    }
+    
+    .footer input[type="email"], .footer button {
+        width: 100%;
+    }
+}
